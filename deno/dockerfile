@@ -1,4 +1,4 @@
-FROM aimvector/deno:1.0.0-buster-slim as build
+FROM pedroguz/deno:1.0.0-buster-slim as build
 
 COPY ./src/ $DENO_DIR
 

@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: example-app
-        image: aimvector/deno-app:v1
+        image: pedroguz/deno-app:v1
         imagePullPolicy: Always
         ports:
         - containerPort: 5000

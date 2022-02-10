@@ -209,7 +209,7 @@ Let's define it as a new service in our `docker-compose.yaml` file
 ```
 kafka-consumer-go:
   container_name: kafka-consumer-go
-  image: aimvector/kafka-consumer-go:1.0.0
+  image: pedroguz/kafka-consumer-go:1.0.0
   build: 
     context: ./applications/consumer
   environment:

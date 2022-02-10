@@ -37,7 +37,7 @@ spec:
     spec:
       containers:
       - name: application-cpu
-        image: aimvector/application-cpu:v1.0.2
+        image: pedroguz/application-cpu:v1.0.2
         imagePullPolicy: Always
         ports:
         - containerPort: 80

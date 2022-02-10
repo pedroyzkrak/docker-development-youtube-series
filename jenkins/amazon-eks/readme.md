@@ -101,7 +101,7 @@ Docker file is [here](../dockerfiles/dockerfile) <br/>
 # you can build it
 
 cd ./jenkins/dockerfiles/
-docker build . -t aimvector/jenkins-slave
+docker build . -t pedroguz/jenkins-slave
 
 ```
 
@@ -149,7 +149,7 @@ pipeline {
                 sh script: '''
                 #!/bin/bash
                 cd $WORKSPACE/docker-development-youtube-series/python
-                docker build . --network host -t aimvector/python:${BUILD_NUMBER}
+                docker build . --network host -t pedroguz/python:${BUILD_NUMBER}
                 '''
             }
         }
@@ -157,7 +157,7 @@ pipeline {
         stage('docker push') {
             steps{
                 sh(script: """
-                    docker push aimvector/python:${BUILD_NUMBER}
+                    docker push pedroguz/python:${BUILD_NUMBER}
                 """)
             }
         }

@@ -206,27 +206,27 @@ shipa cluster-list
 ```
 cd kubernetes\shipa\developers\docker\golang
 
-docker build . -t aimvector/shipa-golang:v1
-docker push aimvector/shipa-golang:v1
+docker build . -t pedroguz/shipa-golang:v1
+docker push pedroguz/shipa-golang:v1
 
 # create an app: Golang
 shipa app-create go-helloworld static -t dev-team -o theonepool
 
 # deploy the app: Golang
-shipa app-deploy -i aimvector/shipa-golang:v1 -a go-helloworld
+shipa app-deploy -i pedroguz/shipa-golang:v1 -a go-helloworld
 shipa app-list
 
 cd .\kubernetes\shipa\developers\docker\python\
 
-docker build . -t aimvector/shipa-python:v1
-docker push aimvector/shipa-python:v1
+docker build . -t pedroguz/shipa-python:v1
+docker push pedroguz/shipa-python:v1
 
 # create an app: Python
 shipa app-create python-helloworld static -t dev-team -o theonepool
 shipa env set FLASK_APP=/app/server.py -a python-helloworld
 
 # deploy the app: Python
-shipa app-deploy -i aimvector/shipa-python:v1 -a python-helloworld
+shipa app-deploy -i pedroguz/shipa-python:v1 -a python-helloworld
 shipa app-list
 
 ```
@@ -326,7 +326,7 @@ We can obtain the EKS address in the Amazon console. <br/>
 shipa app-create go-helloworld static -t dev-team -o theonepool
 
 # deploy the app: Golang
-shipa app-deploy -i aimvector/shipa-golang:v1 -a go-helloworld
+shipa app-deploy -i pedroguz/shipa-golang:v1 -a go-helloworld
 shipa app-list
 
 # create an app: Python
@@ -334,7 +334,7 @@ shipa app-create python-helloworld static -t dev-team -o amazon
 shipa env set FLASK_APP=/app/server.py -a python-helloworld
 
 # deploy the app: Python
-shipa app-deploy -i aimvector/shipa-python:v1 -a python-helloworld
+shipa app-deploy -i pedroguz/shipa-python:v1 -a python-helloworld
 shipa app-list
 
 ```

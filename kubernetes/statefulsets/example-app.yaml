@@ -27,6 +27,6 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: aimvector/api-redis-ha:1.0
+        image: pedroguz/api-redis-ha:1.0
         ports:
         - containerPort: 5000

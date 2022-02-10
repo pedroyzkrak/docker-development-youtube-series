@@ -60,7 +60,7 @@ go build client.go
 ./client
 
 # build the container
-docker build . -t aimvector/redis-client:v1.0.0
+docker build . -t pedroguz/redis-client:v1.0.0
 
 ```
 
@@ -68,14 +68,14 @@ Run our application
 
 ```
 cd .\storage\redis\applications\client\
-docker build . -t aimvector/redis-client:v1.0.0
+docker build . -t pedroguz/redis-client:v1.0.0
 
 docker run -it --net redis `
 -e REDIS_HOST=redis `
 -e REDIS_PORT=6379 `
 -e REDIS_PASSWORD="SuperSecretSecureStrongPass" `
 -p 80:80 `
-aimvector/redis-client:v1.0.0
+pedroguz/redis-client:v1.0.0
 
 ```
 

@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: github-runner
-        image: aimvector/github-runner:latest
+        image: pedroguz/github-runner:latest
         env:
         - name: GITHUB_OWNER
           value: marcel-dempers

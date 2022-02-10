@@ -10,17 +10,17 @@ Build an example app:
 #   you can choose which app you want to build!
 
 
-#   aimvector/golang:1.0.0
+#   pedroguz/golang:1.0.0
 docker-compose build golang
 
 
-#   aimvector/csharp:1.0.0
+#   pedroguz/csharp:1.0.0
 docker-compose build csharp
 
-#   aimvector/nodejs:1.0.0
+#   pedroguz/nodejs:1.0.0
 docker-compose build nodejs
 
-#   aimvector/python:1.0.0
+#   pedroguz/python:1.0.0
 docker-compose build python
 
 ```

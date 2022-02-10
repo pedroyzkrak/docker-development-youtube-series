@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: videos-web
-        image: aimvector/jaeger-tracing:videos-web-1.0.0
+        image: pedroguz/jaeger-tracing:videos-web-1.0.0
         imagePullPolicy : Always
         ports:
         - containerPort: 80

@@ -19,19 +19,19 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: docker build csharp
       run: |
-        docker build ./c# -t aimvector/csharp:1.0.0
+        docker build ./c# -t pedroguz/csharp:1.0.0
     - name: docker build nodejs
       run: |
-        docker build ./nodejs -t aimvector/nodejs:1.0.0
+        docker build ./nodejs -t pedroguz/nodejs:1.0.0
     - name: docker build python
       run: |
-        docker build ./python -t aimvector/python:1.0.0
+        docker build ./python -t pedroguz/python:1.0.0
     - name: docker build golang
       run: |
-        docker build ./golang -t aimvector/golang:1.0.0
+        docker build ./golang -t pedroguz/golang:1.0.0
     - name: docker push
       run: |
-        docker push aimvector/csharp:1.0.0
-        docker push aimvector/nodejs:1.0.0
-        docker push aimvector/golang:1.0.0
-        docker push aimvector/python:1.0.0
+        docker push pedroguz/csharp:1.0.0
+        docker push pedroguz/nodejs:1.0.0
+        docker push pedroguz/golang:1.0.0
+        docker push pedroguz/python:1.0.0

@@ -40,17 +40,17 @@ docker exec -it rabbit-3 rabbitmq-plugins enable rabbitmq_management
 ```
 
 cd messaging\rabbitmq\applications\publisher
-docker build . -t aimvector/rabbitmq-publisher:v1.0.0
+docker build . -t pedroguz/rabbitmq-publisher:v1.0.0
 
-docker run -it --rm --net rabbits -e RABBIT_HOST=rabbit-1 -e RABBIT_PORT=5672 -e RABBIT_USERNAME=guest -e RABBIT_PASSWORD=guest -p 80:80 aimvector/rabbitmq-publisher:v1.0.0
+docker run -it --rm --net rabbits -e RABBIT_HOST=rabbit-1 -e RABBIT_PORT=5672 -e RABBIT_USERNAME=guest -e RABBIT_PASSWORD=guest -p 80:80 pedroguz/rabbitmq-publisher:v1.0.0
 ```
 
 # Message Consumer
 
 ```
 
-docker build . -t aimvector/rabbitmq-consumer:v1.0.0
-docker run -it --rm --net rabbits -e RABBIT_HOST=rabbit-1 -e RABBIT_PORT=5672 -e RABBIT_USERNAME=guest -e RABBIT_PASSWORD=guest aimvector/rabbitmq-consumer:v1.0.0
+docker build . -t pedroguz/rabbitmq-consumer:v1.0.0
+docker run -it --rm --net rabbits -e RABBIT_HOST=rabbit-1 -e RABBIT_PORT=5672 -e RABBIT_USERNAME=guest -e RABBIT_PASSWORD=guest pedroguz/rabbitmq-consumer:v1.0.0
 ```
 
 # Clustering 

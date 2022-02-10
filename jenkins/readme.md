@@ -28,7 +28,7 @@ After installing `kubernetes-plugin` for Jenkins
         * Labels: jenkins-slave (you will need to use this label on all jobs)
         * Containers | Add Template
             * Name: jnlp
-            * Docker Image: aimvector/jenkins-slave
+            * Docker Image: pedroguz/jenkins-slave
             * Command to run : <Make this blank>
             * Arguments to pass to the command: <Make this blank>
             * Allocate pseudo-TTY: yes

@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: example-app
-        image: aimvector/springjava:v1
+        image: pedroguz/springjava:v1
         imagePullPolicy: Always
         ports:
         - containerPort: 8080

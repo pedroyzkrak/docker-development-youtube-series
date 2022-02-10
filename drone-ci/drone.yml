@@ -17,8 +17,8 @@ steps:
   commands:
   - sleep 5 ## give docker enough time to start
   - docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
-  - docker build ./golang -t aimvector/golang:1.0.0
-  - docker push aimvector/golang:1.0.0
+  - docker build ./golang -t pedroguz/golang:1.0.0
+  - docker push pedroguz/golang:1.0.0
 
 services:
 - name: docker

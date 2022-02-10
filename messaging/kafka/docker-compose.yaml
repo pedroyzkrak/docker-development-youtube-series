@@ -2,7 +2,7 @@ version: "3.8"
 services:
   zookeeper-1:
     container_name: zookeeper-1
-    image: aimvector/zookeeper:2.7.0
+    image: pedroguz/zookeeper:2.7.0
     build:
       context: ./zookeeper
     volumes:
@@ -12,7 +12,7 @@ services:
     - kafka
   kafka-1:
     container_name: kafka-1
-    image: aimvector/kafka:2.7.0
+    image: pedroguz/kafka:2.7.0
     build: 
       context: .
     volumes:
@@ -22,7 +22,7 @@ services:
     - kafka
   kafka-2:
     container_name: kafka-2
-    image: aimvector/kafka:2.7.0
+    image: pedroguz/kafka:2.7.0
     build: 
       context: .
     volumes:
@@ -32,7 +32,7 @@ services:
     - kafka
   kafka-3:
     container_name: kafka-3
-    image: aimvector/kafka:2.7.0
+    image: pedroguz/kafka:2.7.0
     build: 
       context: .
     volumes:
@@ -42,7 +42,7 @@ services:
     - kafka
   kafka-producer:
     container_name: kafka-producer
-    image: aimvector/kafka:2.7.0
+    image: pedroguz/kafka:2.7.0
     build: 
       context: .
     working_dir: /kafka
@@ -53,7 +53,7 @@ services:
     - kafka
   kafka-consumer:
     container_name: kafka-consumer
-    image: aimvector/kafka:2.7.0
+    image: pedroguz/kafka:2.7.0
     build: 
       context: .
     working_dir: /kafka
@@ -64,7 +64,7 @@ services:
     - kafka
   kafka-consumer-go:
     container_name: kafka-consumer-go
-    image: aimvector/kafka-consumer-go:1.0.0
+    image: pedroguz/kafka-consumer-go:1.0.0
     build: 
       context: ./applications/consumer
     environment:

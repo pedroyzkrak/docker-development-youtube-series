@@ -352,8 +352,8 @@ ENTRYPOINT ["webhook"]
 Let's build the container and push it to a registry:
 
 ```
-docker build . -t aimvector/example-webhook:v1
-docker push aimvector/example-webhook:v1
+docker build . -t pedroguz/example-webhook:v1
+docker push pedroguz/example-webhook:v1
 ```
 
 ```
@@ -505,8 +505,8 @@ Add it to the admission response
 # Build and push the updates
 
 ```
-docker build . -t aimvector/example-webhook:v1
-docker push aimvector/example-webhook:v1
+docker build . -t pedroguz/example-webhook:v1
+docker push pedroguz/example-webhook:v1
 ```
 
 # Delete all pods to get latest image

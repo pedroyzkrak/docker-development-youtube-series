@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
       - name: rabbitmq-publisher
-        image: aimvector/rabbitmq-publisher:v1.0.0
+        image: pedroguz/rabbitmq-publisher:v1.0.0
         imagePullPolicy: Always
         ports:
         - containerPort: 80

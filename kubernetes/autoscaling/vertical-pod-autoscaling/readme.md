@@ -82,10 +82,10 @@ kubectl -n kube-system get pods
 # build
 
 cd kubernetes\autoscaling\components\application
-docker build . -t aimvector/application-cpu:v1.0.0
+docker build . -t pedroguz/application-cpu:v1.0.0
 
 # push
-docker push aimvector/application-cpu:v1.0.0
+docker push pedroguz/application-cpu:v1.0.0
 
 # deploy 
 kubectl apply -f deployment.yaml

@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: playlists-api
-        image: aimvector/service-mesh:playlists-api-1.0.0
+        image: pedroguz/service-mesh:playlists-api-1.0.0
         imagePullPolicy : Always
         ports:
         - containerPort: 10010

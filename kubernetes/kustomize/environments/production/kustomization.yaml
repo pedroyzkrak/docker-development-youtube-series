@@ -12,5 +12,5 @@ configMapGenerator:
 patchesStrategicMerge:
   - env.yaml
 images:
-- name: aimvector/python
+- name: pedroguz/python
   newTag: 1.0.1

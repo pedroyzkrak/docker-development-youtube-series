@@ -43,9 +43,9 @@ Password: `guest` <br/>
 ```
 
 cd messaging\rabbitmq\applications\publisher
-docker build . -t aimvector/rabbitmq-publisher:v1.0.0
+docker build . -t pedroguz/rabbitmq-publisher:v1.0.0
 
-kubectl apply -f rabbits deployment.yaml
+kubectl apply -n rabbits -f deployment.yaml
 ```
 
 # Automatic Synchronization

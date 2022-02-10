@@ -9,7 +9,7 @@ We can build our `dockerfile`
 
 ```
 cd .\messaging\kafka\
-docker build . -t aimvector/kafka:2.7.0
+docker build . -t pedroguz/kafka:2.7.0
 
 ```
 
@@ -18,7 +18,7 @@ docker build . -t aimvector/kafka:2.7.0
 We can then run it to explore the contents:
 
 ```
-docker run --rm --name kafka -it aimvector/kafka:2.7.0 bash
+docker run --rm --name kafka -it pedroguz/kafka:2.7.0 bash
 
 ls -l /kafka/bin/
 cat /kafka/config/server.properties
@@ -41,7 +41,7 @@ Let's build a Zookeeper image. The Apache folks have made it easy to start a Zoo
 
 ```
 cd ./zookeeper
-docker build . -t aimvector/zookeeper:2.7.0
+docker build . -t pedroguz/zookeeper:2.7.0
 cd ..
 ```
 
@@ -54,7 +54,7 @@ docker run -d `
 --name zookeeper-1 `
 --net kafka `
 -v ${PWD}/config/zookeeper-1/zookeeper.properties:/kafka/config/zookeeper.properties `
-aimvector/zookeeper:2.7.0
+pedroguz/zookeeper:2.7.0
 
 docker logs zookeeper-1
 ```
@@ -67,7 +67,7 @@ docker run -d `
 --name kafka-1 `
 --net kafka `
 -v ${PWD}/config/kafka-1/server.properties:/kafka/config/server.properties `
-aimvector/kafka:2.7.0
+pedroguz/kafka:2.7.0
 
 docker logs kafka-1
 ```
@@ -80,7 +80,7 @@ docker run -d `
 --name kafka-2 `
 --net kafka `
 -v ${PWD}/config/kafka-2/server.properties:/kafka/config/server.properties `
-aimvector/kafka:2.7.0
+pedroguz/kafka:2.7.0
 ```
 
 # Kafka - 3
@@ -91,7 +91,7 @@ docker run -d `
 --name kafka-3 `
 --net kafka `
 -v ${PWD}/config/kafka-3/server.properties:/kafka/config/server.properties `
-aimvector/kafka:2.7.0
+pedroguz/kafka:2.7.0
 ```
 
 
@@ -218,7 +218,7 @@ services:
 ```
 zookeeper-1:
   container_name: zookeeper-1
-  image: aimvector/zookeeper:2.7.0
+  image: pedroguz/zookeeper:2.7.0
   build:
     context: ./zookeeper
   volumes:
@@ -233,7 +233,7 @@ Changing the service name, container name and config mount folder:
 ```
 kafka-1:
   container_name: kafka-1
-  image: aimvector/kafka:2.7.0
+  image: pedroguz/kafka:2.7.0
   build: 
     context: .
   volumes:
@@ -246,7 +246,7 @@ kafka-1:
 ```
   kafka-producer:
     container_name: kafka-producer
-    image: aimvector/kafka:2.7.0
+    image: pedroguz/kafka:2.7.0
     build: 
       context: .
     working_dir: /kafka
@@ -260,7 +260,7 @@ kafka-1:
 ```
   kafka-consumer:
     container_name: kafka-consumer
-    image: aimvector/kafka:2.7.0
+    image: pedroguz/kafka:2.7.0
     build: 
       context: .
     working_dir: /kafka

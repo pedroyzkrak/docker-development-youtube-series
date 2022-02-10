@@ -104,7 +104,7 @@ Basic parameter injection: <br/>
 # values.yaml
 
 deployment:
-  image: "aimvector/python"
+  image: "pedroguz/python"
   tag: "1.0.4"
 
 # deployment.yaml

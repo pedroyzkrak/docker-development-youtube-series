@@ -15,7 +15,7 @@ Take a look at the dockerfile in this folder.
 
 # Run this from the root of the repo!
 
-docker run -it --rm -v ${PWD}:/work -w /work --entrypoint /bin/bash aimvector/linode:2.15.0
+docker run -it --rm -v ${PWD}:/work -w /work --entrypoint /bin/bash pedroguz/linode:2.15.0
 cd ./kubernetes/cloud/linode
 
 ```

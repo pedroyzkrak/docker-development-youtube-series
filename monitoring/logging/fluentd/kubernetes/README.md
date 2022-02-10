@@ -45,10 +45,10 @@ Let's build our [docker image](https://github.com/marcel-dempers/docker-developm
 cd .\monitoring\logging\fluentd\kubernetes\
 
 #note: use your own tag!
-docker build . -t aimvector/fluentd-demo
+docker build . -t pedroguz/fluentd-demo
 
 #note: use your own tag!
-docker push aimvector/fluentd-demo
+docker push pedroguz/fluentd-demo
 
 ```
 

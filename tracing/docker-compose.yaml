@@ -2,7 +2,7 @@ version: "3.4"
 services:
   videos-web:
     container_name: videos-web
-    image: aimvector/jaeger-tracing:videos-web-1.0.0
+    image: pedroguz/jaeger-tracing:videos-web-1.0.0
     build:
       context: ./applications-go/videos-web
     ports:
@@ -11,7 +11,7 @@ services:
     - tracing
   playlists-api:
     container_name: playlists-api
-    image: aimvector/jaeger-tracing:playlists-api-1.0.0
+    image: pedroguz/jaeger-tracing:playlists-api-1.0.0
     build:
       context: ./applications-go/playlists-api
     environment:
@@ -33,7 +33,7 @@ services:
     - tracing
   videos-api:
     container_name: videos-api
-    image: aimvector/jaeger-tracing:videos-api-1.0.0
+    image: pedroguz/jaeger-tracing:videos-api-1.0.0
     build:
       context: ./applications-go/videos-api
     environment:
@@ -49,7 +49,7 @@ services:
     - tracing
   # videos-api-netcore:
   #   container_name: videos-api
-  #   image: aimvector/jaeger-tracing:videos-api-netcore-1.0.0
+  #   image: pedroguz/jaeger-tracing:videos-api-netcore-1.0.0
   #   build:
   #     context: ./applications-go/videos-api-netcore
   #   environment:
